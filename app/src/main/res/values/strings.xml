@@ -3,4 +3,5 @@
     <string name="student_name">Angel Gallegos</string>
     <string name="student_id">1356389</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_image">ImageActivity</string>
 </resources>

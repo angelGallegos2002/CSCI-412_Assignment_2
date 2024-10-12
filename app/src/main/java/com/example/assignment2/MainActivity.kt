@@ -53,7 +53,7 @@ fun FullNameAndID(modifier: Modifier = Modifier.fillMaxSize().wrapContentSize(Al
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-        Text(stringResource(R.string.student_name),Modifier.padding(20.dp))
+        Text(stringResource(R.string.student_name),Modifier.padding(30.dp))
         Text(stringResource(R.string.student_id),Modifier.padding(10.dp))
         Row {
             Button(onClick = {
@@ -70,7 +70,14 @@ fun FullNameAndID(modifier: Modifier = Modifier.fillMaxSize().wrapContentSize(Al
                 context.startActivity(implicitIntent)
             }) {
                 Text("Start Activity Implicitly")
-            } }
+            }
+        }
+        Button(onClick = {
+            val expIntent = Intent(context, ImageActivity::class.java)
+            context.startActivity(expIntent)
+        }) {
+            Text("View Image Activity") // Correct the button label if needed
+        }
 
     }
 }
