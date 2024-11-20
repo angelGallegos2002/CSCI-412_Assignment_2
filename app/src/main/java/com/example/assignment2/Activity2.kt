@@ -25,6 +25,7 @@ import com.example.assignment2.ui.theme.Assignment2Theme
 
 class Activity2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        
         super.onCreate(savedInstanceState)
         enableEdgeToEdge() // This is valid for ComponentActivity
         setContent {
